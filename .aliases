@@ -1,0 +1,11 @@
+alias up='docker-compose up -d'
+alias stop='docker-compose stop'
+alias test='docker-compose exec $(docker-compose ps --services | grep app) vendor/bin/phpunit --testdox'
+alias testsimple='docker-compose exec $(docker-compose ps --services | grep app) vendor/bin/phpunit'
+alias ls='ls -latr --color=auto'
+alias stashstagedfiles='git stash -- $(git diff --staged --name-only)'
+alias sail='./vendor/bin/sail'
+alias please='sudo $(history -p !!)'
+alias a="exe php artisan"
+alias tinker="artisan tinker"
+alias serve="artisan serve"
